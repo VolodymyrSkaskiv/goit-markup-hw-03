@@ -56,14 +56,16 @@ body {
   font-size: 14px;
   line-height: 1.71;
 
-  color: var(--text-color);
+  color: 6 var(--text-color);
 }
 
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0, auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid #ff0000; */
 }
 
 /*================== Header=================*/
@@ -74,10 +76,34 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 
   color: var(--black);
 }
 
+.header-list {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blok,
+.nav-menu,
+.mail-tel {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu .item + .item,
+.mail-tel .item + .item {
+  margin-left: 50px;
+}
+
+.mail-tel {
+  justify-content: flex-end;
+}
 .nav-item {
   font-weight: 500;
   line-height: 1.14;
@@ -118,19 +144,29 @@ body {
 
 .hero {
   background-color: var(--bgr-dark);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  width: 694px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--white);
 }
+
 .button {
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -143,17 +179,29 @@ body {
 
 .button.primary {
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button.secondary {
 }
 
 /*==========SECTION  Наші особливості ===========*/
+.section {
+  padding-top: 89px;
+}
+.list-item {
+  display: flex;
+  gap: 30px;
+}
 
 .title-after {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 
   text-transform: uppercase;
 
@@ -165,9 +213,23 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
 
   color: var(--title-color);
 }
+
+.list-img {
+  display: flex;
+  gap: 30px;
+}
+
+.section-img {
+  padding-bottom: 94px;
+}
+/* .container > .title-before {
+  margin-bottom: 94px;
+} */
 
 /*========SECTION  Наша команда =========*/
 
@@ -175,12 +237,24 @@ body {
   width: 1600px;
 
   background-color: var(--bgr-gray);
+  margin-left: auto;
+  margin-right: auto;
+}
+.team > .container {
+  padding-bottom: 94px;
+}
+
+.list-team {
+  display: flex;
+  gap: 30px;
 }
 
 .team-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  text-align: center;
 
   color: var(--title-color);
 }
@@ -188,24 +262,45 @@ body {
 .team-item-work {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 10px;
+  text-align: center;
 
   color: var(--text-color);
+}
+
+.border-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*============FOTTER===================*/
 .footer {
   width: 1600px;
-  height: 252px;
+  /* height: 252px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--bgr-dark);
 }
 
 .logo.logo-color {
   color: var(--white);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .address {
   font-style: normal;
+}
+
+.list-address .item + .item {
+  margin-top: 9px;
 }
 
 .address-map {
@@ -228,11 +323,16 @@ body {
 
 /*===============PORTFOLIO==============*/
 
+.portfolio.container {
+  padding-top: 103px;
+}
+
 .radio-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-radius: 4px;
 
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -244,6 +344,24 @@ body {
   color: var(--white);
 }
 
+.nav-portfolio {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio.container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.gallery {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
 .gallery-item {
   width: 370px;
   height: 404px;
