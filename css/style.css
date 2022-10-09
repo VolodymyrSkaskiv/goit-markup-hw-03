@@ -49,6 +49,7 @@ button {
 address {
   font-style: normal;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -361,6 +362,7 @@ body {
 }
 
 .card-set {
+  width: 1170px;
   display: flex;
   flex-wrap: wrap;
 
@@ -374,11 +376,12 @@ body {
   margin-left: var(--card-set-gap);
 }
 
-/* .card {
-  box-shadow: ;
+.card {
+  border: 1px solid #eeeeee;
+  /* box-shadow: ;
   border-radius: 5px;
-  overflow: hidden;
-} */
+  overflow: hidden; */
+}
 
 .card-content {
   padding-top: 20px;
