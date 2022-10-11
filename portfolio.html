@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +24,7 @@
   </head>
   <body>
     <!--header-menu-->
-    <header>
+    <header class="header">
       <div class="container header-list">
         <div class="blok">
           <a href="#" class="logo"><span class="accent">Web</span>Studio</a>
@@ -51,140 +58,131 @@
       </div>
     </header>
     <!---->
-    <main class="portfolio container">
-      <h1 class="visually-hidden">Галерея робіт</h1>
-      <ul class="nav-portfolio">
-        <li class="list item">
-          <button type="button" class="radio-btn primary">Усі</button>
-        </li>
-        <li class="list item">
-          <button type="button" class="radio-btn">Веб-сайти</button>
-        </li>
-        <li class="list item">
-          <button type="button" class="radio-btn">Додатки</button>
-        </li>
-        <li class="list item">
-          <button type="button" class="radio-btn">Дизайн</button>
-        </li>
-        <li class="list item">
-          <button type="button" class="radio-btn">Маркетинг</button>
-        </li>
-      </ul>
-      <ul class="card-set">
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g1.jpg" alt="Веб-сайт Технокряк" />
-            </div>
+    <main>
+      <div class="container portfolio">
+        <h1 class="visually-hidden">Галерея робіт</h1>
+        <ul class="nav-portfolio">
+          <li class="list item">
+            <button type="button" class="radio-btn primary">Усі</button>
+          </li>
+          <li class="list item">
+            <button type="button" class="radio-btn">Веб-сайти</button>
+          </li>
+          <li class="list item">
+            <button type="button" class="radio-btn">Додатки</button>
+          </li>
+          <li class="list item">
+            <button type="button" class="radio-btn">Дизайн</button>
+          </li>
+          <li class="list item">
+            <button type="button" class="radio-btn">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="card-set">
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g1.jpg" alt="Веб-сайт Технокряк"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">Технокряк</h2>
               <p class="card-text">Веб-сайт</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g2.jpg" alt="Дизайн постеру" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g2.jpg" alt="Дизайн постеру"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">
                 Постер <span lang="en">New Orlean vs Golden Star</span>
               </h2>
               <p class="card-text">Дизайн</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g3.jpg" alt="Застосунок ресторан" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g3.jpg" alt="Застосунок ресторан"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">
                 Ресторан <span lang="en">Seafood</span>
               </h2>
               <p class="card-text">Додаток</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g4.jpg" alt="Маркетинг проекту" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g4.jpg" alt="Маркетинг проекту"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">Проєкт <span lang="en">Prime</span></h2>
               <p class="card-text">Маркетинг</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g5.jpg" alt="Застосунок Boxes" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g5.jpg" alt="Застосунок Boxes"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">Проєкт <span lang="en">Boxes</span></h2>
               <p class="card-text">Додаток</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g6.jpg" alt="Веб-сайт " />
-            </div>
+          <li class="list card-item">
+            <a href=""><img src="./images/img_g6.jpg" alt="Веб-сайт " /></a>
+
             <div class="card-content">
               <h2 lang="en" class="card-title">Inspiration has no Borders</h2>
               <p class="card-text">Веб-сайт</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g7.jpg" alt="Дизайн видання" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g7.jpg" alt="Дизайн видання"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">
                 Видання <span lang="en">Limited Edition</span>
               </h2>
               <p class="card-text">Дизайн</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g8.jpg" alt="Маркетинг проекту" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g8.jpg" alt="Маркетинг проекту"
+            /></a>
+
             <div class="card-content">
               <h2 class="card-title">Проєкт <span lang="en">LAB</span></h2>
               <p class="card-text">Маркетинг</p>
             </div>
-          </article>
-        </li>
+          </li>
 
-        <li class="list card-item">
-          <article class="card">
-            <div class="card-thumb">
-              <img src="./images/img_g9.jpg" alt="Застосунок для бізнесу" />
-            </div>
+          <li class="list card-item">
+            <a href=""
+              ><img src="./images/img_g9.jpg" alt="Застосунок для бізнесу"
+            /></a>
+
             <div class="card-content">
               <h2 lang="en" class="card-title">Growing Business</h2>
               <p class="card-text">Додаток</p>
             </div>
-          </article>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </main>
     <!--footer logo adressa-->
     <footer class="footer">
