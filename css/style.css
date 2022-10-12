@@ -251,10 +251,6 @@ body {
 .team {
   background-color: var(--bgr-gray);
   padding-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.team > .container {
   padding-bottom: 94px;
 }
 
@@ -331,7 +327,7 @@ body {
 
 /*===============PORTFOLIO==============*/
 
-.container.portfolio {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -387,6 +383,10 @@ body {
   overflow: hidden;
 } */
 
+.list.card-item > a {
+  text-decoration: none;
+}
+
 .card-content {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -402,7 +402,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 
